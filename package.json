@@ -1,0 +1,36 @@
+{
+  "name": "react-mount-elements",
+  "version": "0.1.0",
+  "description": "Mount React components on HTML Elements",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "lint": "tslint -c tslint.json --project tsconfig.json",
+    "prepare": "yarn lint && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migeorge/react-mount-elements.git"
+  },
+  "author": "Mike George <mike@tallduck.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/migeorge/react-mount-elements/issues"
+  },
+  "homepage": "https://github.com/migeorge/react-mount-elements#readme",
+  "devDependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=0.14.0 <17.0.0",
+    "react-dom": ">=0.14.0 <17.0.0"
+  }
+}
