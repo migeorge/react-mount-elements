@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "tslint -c tslint.json --project tsconfig.json",
-    "prepare": "yarn lint && yarn build"
+    "prepublishOnly": "yarn lint && yarn build"
   },
   "repository": {
     "type": "git",
