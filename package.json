@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Mount React components on HTML Elements",
   "main": "dist/index.js",
-  "files": [
-    "dist/"
-  ],
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "tslint -c tslint.json --project tsconfig.json",
