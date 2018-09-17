@@ -6,6 +6,11 @@ This is useful in cases where you have a monolithic application and you're intro
 
 ## Installation
 
+From NPM:
+```
+$ yarn add react-mount-elements
+```
+
 From master:
 ```
 $ yarn add https://github.com/migeorge/react-mount-elements
