@@ -4,7 +4,7 @@ var React = require("react");
 var ReactDOM = require("react-dom");
 var DOMElementDataProps_1 = require("./lib/DOMElementDataProps");
 function reactMountElements(targetMap) {
-    document.addEventListener('DOMContentLoaded', function () {
+    var mount = function () {
         for (var id in targetMap) {
             if (targetMap.hasOwnProperty(id)) {
                 var el = document.getElementById(id);
@@ -15,7 +15,9 @@ function reactMountElements(targetMap) {
                 }
             }
         }
-    });
+    };
+    document.addEventListener('DOMContentLoaded', mount);
+    document.addEventListener('turbolinks:load', mount);
 }
 exports.default = reactMountElements;
 //# sourceMappingURL=index.js.map

@@ -12,7 +12,7 @@ interface ITargetMap {
  * @param targetMap {ITargetMap} An object that maps element ids to the react component that should render there.
  */
 export default function reactMountElements (targetMap: ITargetMap) {
-  document.addEventListener('DOMContentLoaded', () => {
+  const mount = () => {
     for (const id in targetMap) {
       if (targetMap.hasOwnProperty(id)) {
         const el = document.getElementById(id)
@@ -24,5 +24,8 @@ export default function reactMountElements (targetMap: ITargetMap) {
         }
       }
     }
-  })
+  }
+
+  document.addEventListener('DOMContentLoaded', mount)
+  document.addEventListener('turbolinks:load', mount)
 }
